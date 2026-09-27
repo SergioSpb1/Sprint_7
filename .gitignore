@@ -1,0 +1,22 @@
+# Виртуальное окружение (самое важное)
+venv/
+.env
+
+# Кэш и скомпилированные файлы Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE VS Code
+.vscode/
+.history/
+
+# Отчеты тестов и скриншоты
+reports/
+allure-report/
+screenshots/
+logs/
+
+# Системные файлы Windows
+Thumbs.db
+.DS_Store
