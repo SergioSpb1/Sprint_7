@@ -20,3 +20,8 @@ logs/
 # Системные файлы Windows
 Thumbs.db
 .DS_Store
+
+# Метаданные пакетов setuptools
+/*.egg-info/
+/build/
+/dist/
