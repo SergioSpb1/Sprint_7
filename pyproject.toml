@@ -17,3 +17,7 @@ dependencies = [
     "python-dotenv>=1.0",
     "jsonschema>=4.0"
 ]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
