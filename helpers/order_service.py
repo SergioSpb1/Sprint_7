@@ -1,15 +1,17 @@
 import requests
+import allure
 from data import MyUrls
 
 class OrderService:
     def __init__(self):
         self.session = requests.Session()
 
+    @allure.step("POST на создание заказа")
     def create(self, order_data: dict):
-        url = f"{MyUrls.MAIN_URL}{MyUrls.ORDERS_HANDLE}"
-        return self.session.post(url, json=order_data)
+        return self.session.post(MyUrls.ORDERS_HANDLE, json=order_data)
 
-    def get_list_no_param(self):
-        url = f"{MyUrls.MAIN_URL}{MyUrls.ORDERS_HANDLE}"
+    @allure.step("GET на получение списка заказов курьера")
+    def get_list_by_courier(self, courier_id):
+        url = f"{MyUrls.ORDERS_HANDLE}?courierId={courier_id}"
         return self.session.get(url)
 

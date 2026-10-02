@@ -1,8 +1,10 @@
 class MyUrls:
     MAIN_URL = 'https://qa-scooter.praktikum-services.ru'
-    CREATE_COURIER = '/api/v1/courier'
-    LOGIN_COURIER = '/api/v1/courier/login'
-    ORDERS_HANDLE = '/api/v1/orders'
+    
+    COURIER_HANDLE = f'{MAIN_URL}/api/v1/courier'
+    LOGIN_COURIER = f'{MAIN_URL}/api/v1/courier/login'
+    ORDERS_HANDLE = f'{MAIN_URL}/api/v1/orders'
+
     
 class Responses:
 # Согласно переписке qa-fs-python_study_M6 в телемосте 25.09.2026: 
